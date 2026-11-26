@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://github.com/uznbt/omnitoon/releases/latest"><img src="https://img.shields.io/github/v/release/uznbt/omnitoon?label=rilis&color=ff4e33" alt="Rilis terbaru"></a>
   <a href="https://github.com/uznbt/omnitoon/releases"><img src="https://img.shields.io/github/downloads/uznbt/omnitoon/total?label=unduhan&color=ff4e33" alt="Total unduhan"></a>
+  <a href="https://omnitoon.my.id"><img src="https://img.shields.io/badge/Situs_web-omnitoon.my.id-ff4e33?logo=googlechrome&logoColor=white" alt="Situs web Omnitoon"></a>
   <img src="https://img.shields.io/badge/Android-7.0%2B-3ddc84?logo=android&logoColor=white" alt="Android 7.0+">
   <img src="https://img.shields.io/badge/Windows-10%2F11-0078d4?logo=windows&logoColor=white" alt="Windows 10/11">
   <img src="https://img.shields.io/badge/Linux-x86__64-fcc624?logo=linux&logoColor=black" alt="Linux x86_64">
