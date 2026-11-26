@@ -116,9 +116,16 @@ chmod +x Omnitoon_0.1.8_amd64.AppImage
 3. Buka APK dan tunggu proses pemasangan selesai.
 4. Untuk pembaruan berikutnya, buka **Pengaturan → Periksa pembaruan**.
 
-APK memakai keystore yang sama antar rilis supaya versi baru bisa dipasang di
-atas versi lama. Jangan menimpa Omnitoon dengan APK yang ditandatangani kunci
-berbeda.
+Mulai rilis setelah v0.1.8, APK ditandatangani **release key Omnitoon**.
+Karena v0.1.8 dan sebelumnya memakai debug key, pengguna lama harus
+mencadangkan data lalu **uninstall sekali** sebelum memasang APK baru. Data
+lokal (bookmark, riwayat, dan unduhan) ikut terhapus. Rilis setelahnya memakai
+kunci yang sama, jadi pembaruan biasa kembali berjalan.
+
+> [!WARNING]
+> Kunci tanda tangan berubah setelah v0.1.8. Jangan memasang APK baru di atas
+> v0.1.8 tanpa uninstall; Android akan menolak pemasangan karena sertifikatnya
+> berbeda.
 
 > [!NOTE]
 > Pengguna v0.1.7 perlu memasang v0.1.8 secara manual satu kali. Setelah itu
@@ -155,6 +162,9 @@ hash-nya tidak cocok.
   diverifikasi SHA-256, lalu disajikan ke Android lewat loopback.
 - **v0.1.7 dan sebelumnya:** pembaruan masih memakai jalur langsung GitHub.
   Jika unduhan terpotong, pasang APK v0.1.8 secara manual satu kali.
+- **Rilis setelah v0.1.8:** APK memakai release key baru. Update dari v0.1.8
+  harus lewat uninstall manual sekali; setelah itu pembaruan otomatis berjalan
+  normal lagi.
 
 Endpoint pembaruan dan `/api/apk` hanya melayani loopback, bukan dari domain
 publik.
