@@ -42,11 +42,12 @@
 |:---:|:---:|
 | <img src="assets/home-desktop.webp" alt="Beranda Omnitoon di desktop" width="100%"> | <img src="assets/detail-desktop.webp" alt="Halaman detail manga" width="100%"> |
 
-<p align="center">
-  <img src="assets/home-mobile.webp" alt="Beranda Omnitoon di HP" width="300">
-  &nbsp;&nbsp;
-  <img src="assets/download-mobile.webp" alt="Halaman unduh APK Android" width="300">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/home-mobile.webp" alt="Beranda Omnitoon di HP" width="300"></td>
+    <td align="center"><img src="assets/download-mobile.webp" alt="Halaman unduh APK Android" width="300"></td>
+  </tr>
+</table>
 
 ## Unduhan
 
