@@ -1,0 +1,45 @@
+# Lisensi Proprietary Omnitoon
+
+Copyright (c) 2026 uznbt. Seluruh hak dilindungi.
+
+Omnitoon, termasuk berkas binary, APK, paket desktop, katalog tertanam, gambar,
+dan aset lain di repositori ini, adalah perangkat lunak **proprietary**. Kode
+sumber tidak dipublikasikan.
+
+## Yang diizinkan
+
+- Mengunduh dan memasang Omnitoon untuk penggunaan pribadi di perangkat sendiri.
+- Membuat salinan cadangan untuk penggunaan pribadi.
+- Menautkan ke halaman rilis resmi Omnitoon.
+
+## Yang dilarang
+
+- Menjual, menyewakan, atau mengomersialkan Omnitoon.
+- Mengunggah ulang, mendistribusikan, atau menyertakan berkas Omnitoon ke
+  produk atau repositori lain.
+- Mengubah, membongkar, mendekompilasi, atau merekayasa balik binary.
+- Menghapus atau menyembunyikan notifikasi hak cipta.
+- Mengklaim Omnitoon sebagai karya sendiri.
+
+## Komponen pihak ketiga
+
+Omnitoon memakai dependensi open source seperti Rust crates, Tauri, React, dan
+SQLite. Dependensi tersebut tetap tunduk pada lisensi masing-masing. Lisensi
+ini tidak mengubah hak yang diberikan oleh lisensi pihak ketiga.
+
+## Konten pihak ketiga
+
+Manga, cover, judul, dan materi lain yang ditampilkan berasal dari sumber
+masing-masing dan bukan milik Omnitoon. Hak atas konten tersebut tetap berada
+pada pemiliknya.
+
+## Tanpa jaminan
+
+Omnitoon disediakan "sebagaimana adanya", tanpa jaminan apa pun, baik tersurat
+maupun tersirat. Pemilik tidak bertanggung jawab atas kerusakan atau kerugian
+yang timbul dari penggunaan perangkat lunak ini.
+
+## Kontak
+
+Pertanyaan tentang lisensi dapat disampaikan lewat halaman rilis resmi:
+<https://github.com/uznbt/omnitoon/releases>

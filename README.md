@@ -1,47 +1,86 @@
-# Omnitoon Releases
+<p align="center">
+  <img src="assets/banner.webp" alt="Omnitoon — manga dan komik reader" width="100%">
+</p>
 
-[![Rilis terbaru](https://img.shields.io/github/v/release/uznbt/omnitoon-releases?label=rilis%20terbaru)](https://github.com/uznbt/omnitoon-releases/releases/latest)
-[![Total unduhan](https://img.shields.io/github/downloads/uznbt/omnitoon-releases/total?label=unduhan)](https://github.com/uznbt/omnitoon-releases/releases)
+<p align="center">
+  <a href="https://github.com/uznbt/omnitoon/releases/latest"><img src="https://img.shields.io/github/v/release/uznbt/omnitoon?label=rilis&color=ff4e33" alt="Rilis terbaru"></a>
+  <a href="https://github.com/uznbt/omnitoon/releases"><img src="https://img.shields.io/github/downloads/uznbt/omnitoon/total?label=unduhan&color=ff4e33" alt="Total unduhan"></a>
+  <img src="https://img.shields.io/badge/Android-7.0%2B-3ddc84?logo=android&logoColor=white" alt="Android 7.0+">
+  <img src="https://img.shields.io/badge/Windows-10%2F11-0078d4?logo=windows&logoColor=white" alt="Windows 10/11">
+  <img src="https://img.shields.io/badge/Linux-x86__64-fcc624?logo=linux&logoColor=black" alt="Linux x86_64">
+</p>
 
-Mirror publik paket rilis **Omnitoon**, aplikasi manga dan komik reader dengan
-backend Rust. Repositori ini hanya berisi aset rilis; kode sumber dikelola
-secara privat.
+<h3 align="center">Rak baca manga dan komik, langsung di perangkatmu.</h3>
 
-- Server lokal: `http://127.0.0.1:47821`
-- Katalog Komiku, Wurmz, dan CGBUM sudah tertanam di setiap paket
-- Android 7.0+ (`minSdk 24`), Windows 10/11 x64, Linux x86_64
+<p align="center">
+  Omnitoon menyatukan katalog <b>Komiku</b>, <b>Wurmz</b>, dan <b>CGBUM</b> dalam satu aplikasi.
+  Backend Rust berjalan lokal, katalog tertanam di paket, dan chapter bisa dibaca
+  lewat browser, desktop, atau HP Android.
+</p>
 
-## Unduhan terbaru
+<p align="center">
+  <a href="https://github.com/uznbt/omnitoon/releases/latest">
+    <img src="https://img.shields.io/badge/Unduh_Rilis_Terbaru-ff4e33?style=for-the-badge&logo=github&logoColor=white" alt="Unduh rilis terbaru">
+  </a>
+</p>
 
-Buka halaman [rilis terbaru](https://github.com/uznbt/omnitoon-releases/releases/latest)
-untuk melihat semua berkas dan checksum.
+## Kenapa Omnitoon?
 
-### Android
+| | Fitur | Keterangan |
+|:---:|---|---|
+| 📚 | **Satu rak, banyak sumber** | Katalog Komiku, Wurmz, dan CGBUM dalam satu antarmuka. |
+| 📖 | **Reader yang nyaman** | Mode baca vertikal, riwayat chapter, dan bookmark tersimpan lokal. |
+| 📥 | **Baca tanpa internet** | Unduh chapter ke perangkat dan buka lagi kapan saja. |
+| 🖼️ | **Proxy gambar** | Cover dan halaman dimuat lewat backend sendiri agar tidak kena hotlink. |
+| ⚡ | **Backend Rust** | Server lokal ringan, cepat, dan tidak butuh server terpisah. |
+| 🔄 | **Pembaruan terverifikasi** | Unduhan APK bisa dilanjutkan, dicek SHA-256, lalu dipasang dari cache lokal. |
+| 🌐 | **Mirror opsional** | Bagikan rak bacaan lewat Cloudflare Tunnel langsung dari HP atau desktop. |
 
-| Berkas | Keterangan | Ukuran |
+## Tampilan
+
+| Beranda desktop | Detail manga |
+|:---:|:---:|
+| <img src="assets/home-desktop.webp" alt="Beranda Omnitoon di desktop" width="100%"> | <img src="assets/detail-desktop.webp" alt="Halaman detail manga" width="100%"> |
+
+<p align="center">
+  <img src="assets/home-mobile.webp" alt="Beranda Omnitoon di HP" width="300">
+  &nbsp;&nbsp;
+  <img src="assets/download-mobile.webp" alt="Halaman unduh APK Android" width="300">
+</p>
+
+## Unduhan
+
+> [!TIP]
+> Belum tahu harus pilih APK yang mana? Ambil **Omnitoon-universal.apk**.
+> APK ini berisi arm64-v8a dan armeabi-v7a, jadi cocok untuk hampir semua HP.
+
+### 🤖 Android
+
+| Berkas | Cocok untuk | Ukuran |
 | --- | --- | ---: |
-| [Omnitoon-universal.apk](https://github.com/uznbt/omnitoon-releases/releases/latest/download/Omnitoon-universal.apk) | arm64-v8a + armeabi-v7a. Pilih ini kalau ragu. | ±100 MB |
-| [Omnitoon-arm64-v8a.apk](https://github.com/uznbt/omnitoon-releases/releases/latest/download/Omnitoon-arm64-v8a.apk) | Split untuk HP 64-bit ARM. | ±51 MB |
-| [Omnitoon-armeabi-v7a.apk](https://github.com/uznbt/omnitoon-releases/releases/latest/download/Omnitoon-armeabi-v7a.apk) | Split untuk HP 32-bit ARM. | ±50 MB |
-| [Omnitoon-x86_64.apk](https://github.com/uznbt/omnitoon-releases/releases/latest/download/Omnitoon-x86_64.apk) | Eksperimental untuk emulator x86_64. | ±53 MB |
+| [Omnitoon-universal.apk](https://github.com/uznbt/omnitoon/releases/latest/download/Omnitoon-universal.apk) | Hampir semua HP. Pilih ini kalau ragu. | ±100 MB |
+| [Omnitoon-arm64-v8a.apk](https://github.com/uznbt/omnitoon/releases/latest/download/Omnitoon-arm64-v8a.apk) | HP Android 64-bit ARM modern. | ±51 MB |
+| [Omnitoon-armeabi-v7a.apk](https://github.com/uznbt/omnitoon/releases/latest/download/Omnitoon-armeabi-v7a.apk) | HP Android 32-bit ARM yang lebih lama. | ±50 MB |
+| [Omnitoon-x86_64.apk](https://github.com/uznbt/omnitoon/releases/latest/download/Omnitoon-x86_64.apk) | Emulator x86_64. Statusnya eksperimental. | ±53 MB |
 
-APK node membawa cloudflared dan token tunnel. Baca bagian
-[Keamanan](#keamanan) sebelum memasangnya.
+Minimal Android 7.0 (`minSdk 24`). APK dipasang di luar Play Store, jadi Android
+akan meminta izin pemasangan sekali.
 
-### Windows
+### 🪟 Windows
 
 | Berkas | Keterangan |
 | --- | --- |
 | `Omnitoon_<versi>_x64-setup.exe` | Installer NSIS |
 | `Omnitoon_<versi>_x64_en-US.msi` | Installer MSI |
 | `Omnitoon-<versi>-windows-x64-portable.zip` | Versi portable |
-| [Omnitoon-desktop.exe](https://github.com/uznbt/omnitoon-releases/releases/latest/download/Omnitoon-desktop.exe) | Binary langsung tanpa installer |
+| [Omnitoon-desktop.exe](https://github.com/uznbt/omnitoon/releases/latest/download/Omnitoon-desktop.exe) | Binary langsung tanpa installer |
 
-Paket Windows belum ditandatangani. SmartScreen mungkin menampilkan
-peringatan; pilih **More info** lalu **Run anyway** hanya jika berkas sudah
-diverifikasi lewat checksum.
+> [!WARNING]
+> Paket Windows belum ditandatangani. SmartScreen bisa menampilkan peringatan.
+> Verifikasi checksum dulu, lalu pilih **More info → Run anyway** hanya jika
+> berkasnya cocok.
 
-### Linux
+### 🐧 Linux
 
 | Berkas | Distro |
 | --- | --- |
@@ -71,8 +110,7 @@ chmod +x Omnitoon_0.1.8_amd64.AppImage
 ## Memasang di Android
 
 1. Unduh `Omnitoon-universal.apk` dari halaman rilis.
-2. Izinkan browser atau pengelola berkas memasang aplikasi dari sumber tidak
-   dikenal.
+2. Izinkan browser atau pengelola berkas memasang aplikasi dari sumber tidak dikenal.
 3. Buka APK dan tunggu proses pemasangan selesai.
 4. Untuk pembaruan berikutnya, buka **Pengaturan → Periksa pembaruan**.
 
@@ -80,16 +118,17 @@ APK memakai keystore yang sama antar rilis supaya versi baru bisa dipasang di
 atas versi lama. Jangan menimpa Omnitoon dengan APK yang ditandatangani kunci
 berbeda.
 
-Pengguna v0.1.7 perlu memasang v0.1.8 secara manual satu kali. Setelah itu
-pembaruan dalam aplikasi memakai server lokal yang mendukung resume dan
-verifikasi SHA-256.
+> [!NOTE]
+> Pengguna v0.1.7 perlu memasang v0.1.8 secara manual satu kali. Setelah itu
+> pembaruan dalam aplikasi memakai server lokal yang mendukung resume dan
+> verifikasi SHA-256.
 
 ## Verifikasi checksum
 
 Setiap rilis menyertakan dua berkas checksum:
 
-- [SHA256SUMS.txt](https://github.com/uznbt/omnitoon-releases/releases/latest/download/SHA256SUMS.txt) untuk semua aset rilis
-- [SHA256SUMS-apk.txt](https://github.com/uznbt/omnitoon-releases/releases/latest/download/SHA256SUMS-apk.txt) khusus keempat APK Android
+- [SHA256SUMS.txt](https://github.com/uznbt/omnitoon/releases/latest/download/SHA256SUMS.txt) untuk semua aset rilis
+- [SHA256SUMS-apk.txt](https://github.com/uznbt/omnitoon/releases/latest/download/SHA256SUMS-apk.txt) khusus keempat APK Android
 
 Linux dan macOS:
 
@@ -120,15 +159,29 @@ publik.
 
 ## Keamanan
 
-- APK node berisi token Cloudflare Tunnel yang tertanam. Token dienkripsi di
-  dalam vault, tetapi tetap bisa diekstrak dari perangkat.
+> [!WARNING]
+> APK node berisi token Cloudflare Tunnel yang tertanam. Token dienkripsi di
+> dalam vault, tetapi tetap bisa diekstrak dari perangkat.
+
 - Simpan APK hanya di perangkat tepercaya dan jangan mengunggahnya kembali ke
   hosting publik. Jika token bocor, segera ganti token tunnel.
-- Tunnel tidak menyala otomatis. Aktifkan mirror node lewat **Pengaturan**
-  saat ingin membagikan situs.
+- Tunnel tidak menyala otomatis. Aktifkan mirror node lewat **Pengaturan** saat
+  ingin membagikan situs.
 - Ingress Cloudflare harus diarahkan ke `http://127.0.0.1:8080`.
 - Katalog `play.db.omz` tertanam di paket dan disemai ke folder data saat
   pertama dijalankan, jadi tidak perlu mengunduh database terpisah.
+
+## Dibangun dengan
+
+<p>
+  <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/Tauri_2-24C8DB?logo=tauri&logoColor=white" alt="Tauri 2">
+  <img src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite">
+</p>
+
+Server lokal berjalan di `http://127.0.0.1:47821`. Aplikasi desktop juga
+membuka `127.0.0.1:8080` untuk cloudflared.
 
 ## Isi repositori
 
@@ -138,4 +191,8 @@ berkas lain ke repositori ini.
 
 ## Lisensi
 
-Omnitoon didistribusikan di bawah GNU GPL-3.0.
+Omnitoon adalah perangkat lunak **proprietary** (closed source). Binary boleh
+diunduh dan dipakai untuk penggunaan pribadi; redistribusi, penjualan, dan
+rekayasa balik tidak diizinkan. Ketentuan lengkap ada di [LICENSE](LICENSE).
+
+Manga, cover, dan materi pihak ketiga tetap milik sumber masing-masing.
